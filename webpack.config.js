@@ -78,7 +78,7 @@ module.exports = (env, argv) => {
 		plugins: [
 			new CleanWebpackPlugin(),
 			new HtmlWebpackPlugin({
-				template: path.resolve(__dirname, 'src', 'index.html'),
+				template: path.resolve(__dirname, 'public', 'index.html'),
 			}),
 			new Dotenv({
 				allowEmptyValues: true,
