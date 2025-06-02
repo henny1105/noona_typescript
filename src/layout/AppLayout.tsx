@@ -8,6 +8,7 @@ const AppLayout = () => {
 				<div className='logo'>
 					<h1>Spotify Demo</h1>
 				</div>
+				<span>sidebar</span>
 				<ul className='nav_links'>
 					<li>
 						<Link to='/'>Home</Link>
