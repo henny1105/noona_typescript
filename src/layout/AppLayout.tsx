@@ -1,14 +1,14 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link } from 'react-router';
 
 const AppLayout = () => {
 	return (
-		<div className='app-layout'>
+		<div>
 			<nav className='sidebar'>
 				<div className='logo'>
 					<h1>Spotify Demo</h1>
 				</div>
-				<ul className='nav-links'>
+				<ul className='nav_links'>
 					<li>
 						<Link to='/'>Home</Link>
 					</li>
@@ -20,7 +20,7 @@ const AppLayout = () => {
 					</li>
 				</ul>
 			</nav>
-			<main className='main-content'>
+			<main className='main_content'>
 				<Outlet />
 			</main>
 		</div>
