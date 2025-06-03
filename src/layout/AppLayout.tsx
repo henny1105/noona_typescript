@@ -2,6 +2,7 @@ import { styled } from '@mui/material';
 import { Box, Typography } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
+import LibraryHead from './components/LibraryHead';
 import React from 'react';
 import { NavLink, Outlet } from 'react-router';
 
@@ -51,6 +52,10 @@ const StyledNavLink = styled(NavLink)(({ theme }) => ({
 	},
 }));
 
+const StyledLibraryHead = styled(LibraryHead)(({ theme }) => ({
+	color: theme.palette.text.secondary,
+}));
+
 const AppLayout = () => {
 	return (
 		<Layout>
@@ -71,6 +76,9 @@ const AppLayout = () => {
 							</Typography>
 						</StyledNavLink>
 					</NavList>
+				</ContentBox>
+				<ContentBox>
+					<StyledLibraryHead />
 				</ContentBox>
 			</Sidebar>
 
