@@ -3,6 +3,7 @@ import { Box, Typography } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import LibraryHead from './components/LibraryHead';
+import EmptyPlaylist from './components/EmptyPlaylist';
 import React from 'react';
 import { NavLink, Outlet } from 'react-router';
 
@@ -80,8 +81,8 @@ const AppLayout = () => {
 				<ContentBox>
 					<StyledLibraryHead />
 				</ContentBox>
+				<EmptyPlaylist />
 			</Sidebar>
-
 			<Outlet />
 		</Layout>
 	);
