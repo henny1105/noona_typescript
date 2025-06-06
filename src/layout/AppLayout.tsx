@@ -11,10 +11,13 @@ const Layout = styled('div')({
 	display: 'flex',
 	height: '100vh',
 	padding: '8px',
+	gap: '20px',
 });
 
 const Sidebar = styled('div')(({ theme }) => ({
-	width: '331px',
+	width: '240px',
+	minWidth: '240px',
+	maxWidth: '240px',
 	height: '100vh',
 	display: 'flex',
 	flexDirection: 'column',

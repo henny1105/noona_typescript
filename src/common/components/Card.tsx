@@ -4,7 +4,6 @@ import PlayButton from './PlayButton';
 const CardContainer = styled('div')(({ theme }) => ({
 	'minWidth': '160px',
 	'width': '100%',
-	'height': '100%',
 	'padding': '12px',
 	'borderRadius': '8px',
 	'&:hover': {
