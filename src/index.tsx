@@ -7,14 +7,26 @@ import { BrowserRouter } from 'react-router';
 import theme from './theme';
 import { ThemeProvider } from '@mui/material';
 import { CssBaseline } from '@mui/material';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
+const queryClient = new QueryClient({
+	defaultOptions: {
+		queries: {
+			retry: 1,
+		},
+	},
+});
+
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
-				<App />
+				<QueryClientProvider client={queryClient}>
+					<App />
+				</QueryClientProvider>
 			</ThemeProvider>
 		</BrowserRouter>
 	</React.StrictMode>
