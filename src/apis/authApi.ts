@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { URLSearchParams } from 'url';
 import { clientId, clientSecret } from '../configs/authConfig';
 
 const encodedBase64 = (data: string): string => {

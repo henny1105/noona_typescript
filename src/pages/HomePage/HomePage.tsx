@@ -1,7 +1,7 @@
 import React from 'react';
-
+import NewReleases from './components/NewRelease';
 const HomePage = () => {
-	return <div>HomePage</div>;
+	return <NewReleases />;
 };
 
 export default HomePage;
